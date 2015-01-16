@@ -12,43 +12,57 @@
 # ---------------------------------------------------
 
 import time
+import random
 
 def main():
+
+    print(random.choice(["put Mjeseca","put Marsa","put Jupitera"]))
+    print(random.randint(1,15))
+    
     print("------------------------------------------------")
     print("-------------------VOYAGER----------------------")
     print("------------------------------------------------")
+    print("Pokrecem igru ...")
+    time.sleep(2)
     print("Nalazis se u svemirskom brodu, negdje u svemiru ")
     print("------------------------------------------------")
     print("Trazis put kuci")
+    time.sleep(1)
     print("------------------------------------------------")
     print("Pokusavas pronaci pravi put do zemlje")
-    print("------------------------------------------------")
-    print("Pokrecem igru ...")
-    time.sleep(2)
+    time.sleep(1)
     print("------------------------------------------------")
     print("Pokrecem navigaciju...")
     time.sleep(2)
     print("------------------------------------------------")
-    time.sleep(3) 
     print("Pokrecem warp pogon i pripremam se za putovanje")
-    print("------------------------------------------------")
     time.sleep(2)
+    print("------------------------------------------------")
     print("Mozes upaliti warp(1) warp (2)")
     answer = int(raw_input("---> Odaberi warp pogon ... "))
     print("Odabrao si ",answer," Sto ce se dogoditi?")
-    print("------------------------------------------------")
     time.sleep(2)
+    print("------------------------------------------------")
     print("Ulazim u warp ...")
     time.sleep(2)
-    print("Prosli smo nekoli suncevih sistema ...")
-    time.sleep(3)
+    
     if answer == 2:
-        print("...odjednom se pojavila crna rupa povukla brod u svoju jezgru, nitko te vise nije vidio....")
+        print("------------------------------------------------")
+        print("Iz strojarnice javljaju nestabilnost u warp jezgri ...")
+        time.sleep(1)
+        print("------------------------------------------------")
+        print("...dogodio se nepredvidjeni zboj u warp jezgri, Voyager se zaustavio....")
+        time.sleep(1)
+        print("------------------------------------------------")
     else:
-        print("...tvoj brod je zaustivio su zaustavili Romulanci")
+        print("Prosao si nekoliko svjetlosnih godina")
+        print("------------------------------------------------")
         time.sleep(2)
-        print("......................................")
-        print("Romulanci te zovu na ekran")
+        print("... i odjenom su tvoj brod zaustavili Izvanzemaljci")
+        time.sleep(2)
+        print("------------------------------------------------")
+        print("... zovu kapetana na ekran")
+    print(random.choice(["a","b","c"]))
         
 
     # end of program

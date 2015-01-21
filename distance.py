@@ -14,11 +14,9 @@ today = date.today()
 
 def main():
     print today
+    print ("formula brzina(v), duzina(s), vrijeme(t): v=s*t / s=v*t / t=s/v ")
+    print ("1 m/s = 3.6 km/h")
+    print ("1 km = 1000 m")
 
-    s = int(raw_input("Distance (km): "))
-    v = int(raw_input("Average speed you will travel: "))
-    
-    print ("Formula v=s*t, s=v*t, t=s/v")
-    t = s/v
-    print t
-    
+    s = int(raw_input("DUZINA(m): "))
+    v = int(raw_input("BRIZINA m/S"))
